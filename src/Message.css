@@ -1,0 +1,44 @@
+.message {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: fit-content;
+  justify-content: space-between;
+  margin: 15px;
+}
+.message > p {
+  background-color: #f3f3f5;
+  font-size: medium;
+  padding: 15px;
+  border-radius: 20px;
+  margin: 10px;
+  margin-right: auto;
+}
+.message > h6 {
+  background-color: white;
+  margin-right: auto;
+  bottom: -20px;
+  position: absolute;
+  right: 0;
+}
+.message > small {
+  color: gray;
+  position: absolute;
+  font-size: 8px;
+  bottom: -5px;
+  right: 0;
+}
+.message_sender {
+  margin-left: auto;
+}
+.message_sender > .message_photo {
+  order: 1;
+  margin: 15px;
+}
+.message_photo {
+  order: 0;
+}
+.message_sender > p {
+  background-color: #3cabfa;
+  color: white;
+}
