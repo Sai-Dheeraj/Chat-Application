@@ -33,7 +33,7 @@ db.collection('chats').doc(chatId).collection("messages").add({
 setInput("")
     }
     return (
-        <div className='chat'>
+        <div id="chat_box" className='chat'>
           <div className="chat_header">
     <h4>To: <span className="chat_name">{chatName}</span></h4>
               <Button onClick={()=>auth.signOut()}>

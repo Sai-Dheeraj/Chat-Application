@@ -1,6 +1,6 @@
 import firebase from 'firebase'
 const firebaseConfig = {
-  apiKey:
+  apiKey:"AIzaSyADxIJaRAmHs0KCT-c6vgmI6XOpFTWQlxM",
   authDomain: "peptalk-9b776.firebaseapp.com",
   projectId: "peptalk-9b776",
   storageBucket: "peptalk-9b776.appspot.com",

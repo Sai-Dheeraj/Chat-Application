@@ -6,9 +6,17 @@ import { selectUser } from './features/userSlice';
 import "./Sidebar.css"
 import SidebarChat from './SidebarChat';
 import db from"./firebase"
+import { dark } from '@material-ui/core/styles/createPalette';
+
+const dark_theme = {
+  backgroundColor: 'black',
+}
+
+
 function Sidebar() {
   const user=useSelector(selectUser);
   const[chats,setChats]=useState([]);
+
 
 useEffect(()=>{
   db.collection("chats").onSnapshot((snapshot)=>
@@ -25,7 +33,7 @@ const addChat=()=>{
   }
 };
     return (
-        <div className='sidebar'>
+        <div id="sidebar" className='sidebar'>
           <div className='sidebar_header'>
             <Avatar src={user.photo}className="sidebar_avatar"/>
             <div className='sidebar_input'>
@@ -41,10 +49,17 @@ const addChat=()=>{
               <SidebarChat key={id} id={id} chatName={chatName} />
             ))}
           </div>
-            
+          <div id="dark_mode_button">
+            <button onClick = {() => handleClick()}>Dark Mode</button>
+          </div>
         </div>
         
     );
+}
+
+function handleClick(){
+  document.getElementById('sidebar').classList.toggle("dark_mode");
+  document.getElementById('chat_box').classList.toggle("dark_mode");
 }
 
 export default Sidebar;

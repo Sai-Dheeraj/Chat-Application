@@ -1,10 +1,16 @@
 .sidebar {
-  flex: 0.35;
+  flex: 0.15;
   height: 100vh;
   flex-direction: column;
   background-color: #f5f5f5;
   border-right: 1px solid lightgray;
+  transition: background-color 0.3s ease-in-out;
 }
+
+.sidebar.dark_mode{
+  background-color: #16213E;
+}
+
 .sidebar_header {
   display: flex;
   align-items: center;
