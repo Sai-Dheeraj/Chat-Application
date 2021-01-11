@@ -4,7 +4,7 @@ import "./Dmessage.css"
 import Sidebar from './Sidebar'
 function Dmessage() {
     return (
-        <div className='dmessage'>
+        <div id="message_container" className='dmessage'>
             <Sidebar />
             <Chat />
         </div>
