@@ -7,8 +7,12 @@
   transition: background-color 0.4s ease-in-out;
 }
 
+.chat.dark_mode .chat_header .chat_name{
+  color: grey;
+}
+
 .chat.dark_mode{
-  background-color: rgb(23, 23, 23);
+  background-color: #1c1c1c;
 }
 
 .chat_header {
@@ -47,12 +51,17 @@
   display: none;
 }
 .chat_input > form > input {
-  width: 98%;
+  width: 96%;
   outline-width: 0;
-  border: 1px solid lightgray;
+  border: 0px solid lightgray;
   border-radius: 999px;
-  padding: 5px;
+  padding: 15px;
 }
+
+.chat_input form input{
+  background-color:rgb(232, 232, 232)
+}
+
 .chat_input > form > button {
   display: none;
 }
